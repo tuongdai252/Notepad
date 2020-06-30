@@ -24,9 +24,9 @@ public class MainActivity extends AppCompatActivity {
     public boolean isEmptyFile(String filename) {
         File file = new File(filename);
         if(file.length() == 0) {
-            return false;
+            return true;
         }
-        return true;
+        return false;
     }
 
     private void saveUpdate() {
